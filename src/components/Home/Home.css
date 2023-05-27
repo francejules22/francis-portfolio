@@ -1,0 +1,336 @@
+.__home-container{
+    margin-top: 2rem;
+    width: 100%;
+    height: 70rem;
+    background-color: var(--primary-bg);
+}
+
+.__home-para-title{
+    top: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-size: 24rem;
+}
+
+.__home-para{
+    color: var(--white);
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.__para-1{
+    position: absolute;
+    top: 32rem;
+    left: 3rem;
+    font-size: 42px;
+}
+
+.__para-2{
+    position: absolute;
+    top: 36rem;
+    left: 2.5rem;
+    font-size: 89px;
+}
+
+.__para-2 span{
+    border-bottom: 2px solid var(--tertiary);
+    font-weight: 300;
+}
+
+.__para-3{
+    position: absolute;
+    top: 45rem;
+    left: 9rem;
+    font-size: 30px;
+}
+
+.__home-button button {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    padding: 10px 16px;
+    border: 2px solid var(--tertiary);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: .3s;
+    font-family: inherit;
+    color: var(--tertiary);
+    z-index: 1;
+   }
+   
+.__home-button a{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--tertiary);
+}
+   
+.__home-button button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    background: var(--tertiary);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+.__home-button button:hover::before {
+    width: 105%;
+   }
+   
+.__home-button a:hover{
+    color: var(--white);
+}
+
+
+.__home-img img{
+    position: absolute;
+    left: 22rem;
+    bottom: -34rem;
+    width: 48rem;
+    height: 62rem;
+    overflow: hidden;
+    border-bottom: 1px solid var(--tertiary);
+}
+
+.__home-social{
+    position: relative;
+    right: 0;
+}
+
+.__home-social-links img{
+    width: 20px;
+    height: 20px;
+    margin: 15px 60px 0 60px;
+    transform: scale(0.8);
+    transition: all .3s ease-in-out
+}
+
+
+.__home-social-links img:hover{
+    transform: scale(1);
+}
+
+
+@media screen and (max-width: 992px){
+    .__home-container{
+        height: 45rem;
+    }
+    .__home-para-title{
+        font-size: 12rem;
+    }
+    .__para-1{
+        position: absolute;
+        top: 14rem;
+        left: 2.5rem;
+        font-size: 30px;
+    }
+    
+    .__para-2{
+        position: absolute;
+        top: 18rem;
+        left: 2.2rem;
+        font-size: 45px;
+    }
+    .__para-3{
+        position: absolute;
+        top: 23rem;
+        left: 3rem;
+        font-size: 18px;
+    }
+    .__home-img img{
+        position: absolute;
+        left: 12rem;
+        bottom: -17rem;
+        width: 24rem;
+        height: 32rem;
+    }
+
+    .__home-social-links img{
+        width: 18px;
+        height: 18px;
+    }
+    .__home-social-links li{
+        margin: -5px 30px 0 0;
+    }
+    .__home-button button{
+        position: absolute;
+        top: 28rem;
+        left: 2.5rem;
+        padding: 8px 10px;
+     }  
+     .__home-button a{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .__home-container{
+        height: 35rem;
+    }
+    .__home-para-title{
+        font-size: 10rem;
+    }
+    .__para-1{
+        top: 12rem;
+        left: 1.7rem;
+        font-size: 24px;
+    }
+    .__para-2{
+        top: 15rem;
+        left: 1.5rem;
+        font-size: 30px;
+    }
+    .__para-3{
+        top: 19rem;
+        left: 3rem;
+        font-size: 12px;
+    }
+    .__home-img img{
+        left: 6rem;
+        bottom: -15rem;
+        width: 22rem;
+        height: 28rem;
+    }
+    .__home-button button{
+        top: 23rem;
+        left: 1.6rem;
+        padding: 4px 8px;
+        font-size: 18px;
+     }  
+    
+     .__home-social-links li{
+        margin: -5px -10px 0 -50px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .__home-container{
+        height: 25rem;
+    }
+    .__home-para-title{
+        font-size: 7rem;
+    }
+    .__home-img img{
+        left: 4rem;
+        bottom: -11rem;
+        width: 16rem;
+        height: 20rem;
+    }
+    .__para-1{
+        top: 9rem;
+        left: 1.5rem;
+        font-size: 18px;
+    }
+    .__para-2{
+        top: 11rem;
+        left: 1.3rem;
+        font-size: 24px;
+    }
+    .__para-3{
+        top: 14rem;
+        left: 2rem;
+        font-size: 12px;
+    }
+    .__home-button button{
+        top: 18rem;
+        left: 1.3rem;
+        padding: 4px 6px;
+    }
+    .__home-button a{
+        font-size: 12px;
+    }
+    .__home-social-links img{
+        width: 12px;
+        height: 12px;
+    }
+    .__home-social-links li{
+        margin: -5px -10px 0 -60px; 
+    }
+}
+
+@media screen and (max-width: 390px){
+    .__home-container{
+        height: 18rem;
+    }
+    .__home-para-title{
+        padding-top: 20px;
+        font-size: 4.5rem;
+    } 
+    .__home-img img{
+        left: 1.8rem;
+        bottom: -7.5rem;
+        width: 10rem;
+        height: 13rem;
+    }
+    .__para-1{
+        top: 7rem;
+        font-size: 12px;
+    }
+    .__para-2{
+        top: 8.5rem;
+        font-size: 16px;
+    }
+    .__para-3{
+        font-size: 10px;
+        top: 10.5rem;
+        left: 2rem;
+    }
+    .__home-button button{
+        top: 14rem;
+        left: 1.3rem;
+        padding: 1px;
+    }
+    .__home-button a{
+        font-size: 9px;
+    }
+    .__home-social-links img{
+        width: 10px;
+        height: 10px;
+    }
+    .__home-social-links li{
+        margin: -10px -10px 0 -90px; 
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .__home-img img{
+        left: 2.5rem;
+        bottom: -5rem;
+        width: 8rem;
+        height: 10rem;
+    }
+      .__home-social-links img{
+        width: 8px;
+        height: 8px;
+    }
+      .__home-social-links li{
+        margin: -10px -10px 0 -90px; 
+    }
+    .__home-button button{
+        top: 14rem;
+        left: 1.3rem;
+        padding: 1px;
+    }
+    .__home-button a{
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,414 @@
+.__about-container{
+    width: 100%;
+    height: 70rem;
+    background-color: var(--primary-bg);
+}
+
+.__para-about-title h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26rem;
+    text-transform: uppercase; 
+    font-weight: 700;
+    color: var(--secondary);
+    padding-left: 2.5rem;
+    overflow: hidden;
+}
+
+.__about-img-wrapper{
+    position: absolute;
+    top: -15rem;
+    left: 8rem;
+    width: 32rem;
+    height: 38rem;
+    background-image:  linear-gradient(white, white),
+                       linear-gradient(white, white),
+                       linear-gradient(white, white),
+                       linear-gradient(white, white),
+                       linear-gradient(#101B2C, #101B2C);
+    background-repeat: no-repeat;
+    background-size: 2px 50%, 25% 2px, 2px 20%, 50% 2px, calc(100% - 8px) calc(100% - 8px);
+    background-position: left bottom, left bottom, right top, right top, 4px 4px;
+}
+
+.__about-img-wrapper img{
+    position: absolute;
+    top: -2.3rem;
+    width: 30rem;
+    height: 40rem;
+}
+
+.__para-about-content{
+    position: absolute;
+    top: -15rem;
+    right: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:200;
+    color: var(--white);
+    text-align: justify;
+}
+
+.__about-info-wrapper{
+    position: absolute;
+    top: 15rem;
+    left: -4rem;
+}
+
+.__about-info-wrapper .__about-info{
+     margin-left: 4rem;
+}
+
+.__about-info{
+    height: 7rem;
+    width: 8rem;
+    border: 1px solid var(--tertiary);
+    border-top-right-radius: 24px;
+}
+
+.__about-info-content img{
+    position: absolute;
+    top: -1rem;
+    width:1.8rem;
+    height: 1.5rem;
+}
+
+.__about-info-content h2{
+    margin: 35px 0 0 0;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    text-align: center;
+}
+
+.__about-info-content span{
+    font-size: 24px;
+    font-family: 700;
+}
+
+.__about-info:hover{
+    background-color: var(--secondary);
+    cursor: pointer;
+    animation: rotate 1s;
+    transition: all .5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+.__about-button{
+    position: absolute;
+    top: 26rem;
+    left: -2px;
+}
+
+
+.__about-button a{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--tertiary);
+}
+
+.__about-button button {
+    padding: 16px 24px;
+    border: 2px solid var(--tertiary);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: var(--tertiary);
+   }
+   
+.__about-button button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    background: var(--tertiary);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+.__about-button button:hover::before {
+    width: 105%;
+   }
+   
+.__about-button a:hover{
+    color: var(--white);
+}
+
+
+
+
+@media screen and (max-width: 992px){
+    .__about-container{
+        height: 50rem;
+    }
+    .__para-about-title h2{
+        font-size: 14rem;
+        top: 10rem;
+        padding-left: 2rem;
+    }
+    .__about-img-wrapper img{
+        top: -0.2rem;
+        width: 22rem;
+        height: 28rem;
+    }
+    .__about-img-wrapper{
+        top: -8rem;
+        left: 3rem;
+        width: 24rem;
+        height: 28rem;
+    }
+    .__para-about-content{
+        top: -8.2rem;
+        right: 2rem;
+        font-size: 16px;
+    }
+    .__about-info-wrapper{
+        top: 18rem;
+        left: -1rem;
+    }
+    .__about-info{
+        height: 5rem;
+        width: 6rem;
+    }
+    .__about-info-wrapper .__about-info{
+        margin-left: 1.2rem;
+    }
+    .__about-info-content h2{
+        margin: 28px 0 0 0;
+        font-size: 14px;
+    }
+    
+    .__about-info-content span{
+        font-size: 18px;
+    }
+    .__about-button button{
+        padding: 14px 20px;
+    }
+    .__about-button a{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .__about-container{
+        height: 45rem;
+    }
+    .__para-about-title h2{
+        font-size: 10rem;
+        top: 10rem;
+        padding-left: 1rem;
+    }
+    .__about-img-wrapper img{
+        top: -0.2rem;
+        width: 19rem;
+        height: 24rem;
+    }
+    .__about-img-wrapper{
+        top: -7rem;
+        left: 2rem;
+        width: 20rem;
+        height: 24rem;
+    }
+    .__para-about-content{
+        top: -7rem;
+        right: 2rem;
+        font-size: 14px;
+    }
+    .__about-info-wrapper{
+        top: 19rem;
+        left: -1rem;
+    }
+    .__about-info{
+        height: 5rem;
+        width: 4.8rem;
+    }
+    .__about-info-wrapper .__about-info{
+        margin-left: 1rem;
+    }
+    .__about-info-content h2{
+        margin: 22px 5px 5px 5px;
+        font-size: 12px;
+    }
+    
+    .__about-info-content span{
+        font-size: 18px;
+    }
+    .__about-button button{
+        padding: 10px 18px;
+    }
+    .__about-button a{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+     .__about-container{
+        height: 35rem;
+    }
+    .__para-about-title h2{
+        font-size: 7rem;
+        padding-left: .2rem;
+    }
+    .__about-img-wrapper img{
+        top: -0.4rem;
+        width: 13rem;
+        height: 16rem;
+    }
+    .__about-img-wrapper{
+        top: -4rem;
+        left: 1rem;
+        width: 14rem;
+        height: 16rem;
+    }
+    .__para-about-content{
+        top: -4rem;
+        right: 1rem;
+        font-size: 10px;
+    }
+    .__about-info-wrapper{
+        top: 15rem;
+        left: -1rem;
+    }
+    .__about-info{
+        height: 3rem;
+        width: 3.5rem;
+        border-top-right-radius: 12px;
+    }
+    .__about-info-wrapper .__about-info{
+        margin-left: 1rem;
+    }
+    .__about-info-content h2{
+        margin: 18px 1px 1px 1px;
+        font-size: 8px;
+    }
+    
+    .__about-info-content span{
+        font-size: 10px;
+    }
+
+    .__about-info-content img{
+        top: -0.5rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    .__about-button{
+        top: 20rem;
+        left: -2px;
+    }
+
+    .__about-button button{
+        padding: 8px 14px;
+    }
+    .__about-button a{
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 390px){
+    .__about-container{
+        height: 25rem;
+    }
+    .__para-about-title h2{
+        font-size: 4.5rem;
+        padding-left: .1rem;
+    }
+    .__about-img-wrapper img{
+        top: -0.3rem;
+        width: 10rem;
+        height: 12rem;
+    }
+    .__about-img-wrapper{
+        top: -3rem;
+        left: 1rem;
+        width: 10rem;
+        height: 12rem;
+    }
+
+    .__para-about-content{
+        top: -3rem;
+        right: 1rem;
+        font-size: 6px;
+    }
+    .__about-info-wrapper{
+        top: 9.5rem;
+        left: -0.3rem;
+    }
+    .__about-info{
+        height: 2rem;
+        width: 2.5rem;
+        border-top-right-radius: 8px;
+    }
+    .__about-info-wrapper .__about-info{
+        margin-left: 4px;
+    }
+    .__about-info-content h2{
+        margin: 10px 0 0 0;
+        font-size: 6px;
+    }
+    
+    .__about-info-content span{
+        font-size: 6px;
+    }
+
+    .__about-info-content img{
+        top: -0.5rem;
+        width: 14px;
+        height: 12px;
+    }
+    .__about-button{
+        top: 13rem;
+        left: -2px;
+    }
+
+    .__about-button button{
+        padding: 2px 6px;
+    }
+    .__about-button a{
+        font-size: 8px;
+    } 
+}
+
+@media screen and (max-width: 360px){
+    .__about-img-wrapper{
+        top: -3rem;
+        left: 1rem;
+        width: 8rem;
+        height: 10rem;
+    }
+     .__about-img-wrapper img{
+        top: -0.3rem;
+        width: 8rem;
+        height: 10rem;
+    }
+        .__para-about-content{
+        top: -3rem;
+        right: 10px;
+        font-size: 6px;
+    }
+}
