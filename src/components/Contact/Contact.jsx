@@ -62,7 +62,7 @@ const Contact = () => {
                 <div className="col">
                   <Fade left>
                     <div className="__contact-wrapper">
-                        <div className="__contact-details">
+                        <div className="__contact-details"> 
                             <h2>Get In Touch</h2>
                         </div>
                         <div className="__contact-card">
@@ -93,7 +93,7 @@ const Contact = () => {
                 </div>
               </div>
               <footer className="__contact-footer">
-                  <p>&copy;France 2023. All Right Reserved</p>
+                  <p>&copy;France 2023. All Right Reserved.</p>
               </footer>
            </div>
         </>
